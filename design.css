@@ -1,0 +1,31 @@
+.btn-zoom-out {
+  transition: transform 0.3s ease-in-out;
+}
+
+.btn-zoom-out:hover {
+  transform: scale(0.9);
+}
+
+/* end of button animations ------------------------------------------------------*/
+
+/* the start of result announcer ------------------------------------------------ */
+
+.resulti {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* the End of result announcer ------------------------------------------------ */
+
+/* the Footer area style */
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(17, 15, 15);
+}
+
+body{
+background-color: black;
+}

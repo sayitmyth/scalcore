@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>FORM | SCAL</title>
+    <link rel="stylesheet" href="/src/app.css">
+    <link rel="stylesheet"
+        href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css">
+
+    <style>
+        body {
+            background-color: rgb(215, 214, 255);
+        }
+
+        #fld {
+            border-radius: 30px;
+            width: 350px;
+            height: 30px;
+            border: 1px solid rgb(215, 214, 255);
+        }
+
+        .subscribe-container {
+            margin-top: 200px;
+            margin-left: 400px;
+
+        }
+
+        .subscribe-button {
+            border-radius: 10px;
+            height: 35px;
+            border: 1px solid rgb(215, 214, 255);
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="subscribe-container">
+        <form method="POST" id="subscribe-form">
+            <input type="email" name="youremail" placeholder="  sumit@abc.in" id="fld" required><br>
+            <input type="text" name="yourname" placeholder="  sumit " id="fld" required><br>
+            <input class="subscribe-button" type="submit" value="subscribe">
+        </form>
+    </div>
+
+
+
+
+    <!-- the javascript files  -->
+
+
+    <script src="app.js"></script>
+
+    <script>
+
+        const express = require("express");
+        const bodyParser = require("body-parser");
+        const app = express();
+
+        // Serve static files from the current directory (including "logina.html")
+        app.use(express.static(__dirname));
+
+        // Parse URL-encoded data
+        app.use(bodyParser.urlencoded({ extended: true }));
+
+        // Serve "logina.html" when users visit the root URL ('/')
+        app.get('/', (req, res) => {
+            res.sendFile(__dirname + "/logina.html");
+        });
+
+        // Handle form submissions and respond with a "thank you" message
+        app.post("/", (req, res) => {
+            res.send("Thank you for subscribing!");
+        });
+
+        // Start the server
+        const PORT = 3000; // Choose a port number that's not in use
+        app.listen(PORT, () => {
+            console.log(`Server is running on port ${PORT}`);
+        });
+
+
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const subscribeForm = document.getElementById('subscribe-form');
+
+            subscribeForm.addEventListener('submit', function (event) {
+                event.preventDefault(); // Prevent the default form submission behavior
+
+                // Your custom logic here, if needed
+
+                // Redirect to your custom HTML file
+                window.location.href = 'userone.html';
+            });
+        });
+    </script>
+</body>
+
+</html>

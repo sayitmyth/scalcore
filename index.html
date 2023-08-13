@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ꜱᴄᴀʟ | S ᑕ ᗩ ᒪ ᑕ O ᖇ Σ ™ </title>
+
+    <!-- The Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap" rel="stylesheet">
+
+
+
+    <!-- The End Of Google Fonts -->
+
+
+
+    <!-- The Bootstrap CSS & Other CSS -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css" rel="stylesheet" />
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.css"  rel="stylesheet" />
+
+    <style>
+        body {
+            scroll-behavior: smooth;
+        }
+
+        .btn-zoom-out {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .btn-zoom-out:hover {
+            transform: scale(0.9);
+        }
+
+        /* end of button animations ------------------------------------------------------*/
+
+        /* the start of result announcer ------------------------------------------------ */
+
+        .resulti {
+            font-family: "Open Sans", sans-serif;
+        }
+
+        /* the End of result announcer ------------------------------------------------ */
+
+        /* the Footer area style */
+
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* the rotator flower */
+
+        .img-fluid {
+            animation: rotateImg 30s linear infinite;
+        }
+
+        @keyframes rotateImg {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(359deg);
+            }
+        }
+
+
+
+        /* page loader */
+
+
+        .loading-circle-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #000000;
+        }
+
+        .loading-circle {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 5px solid #007AE5;
+            border-top: 5px solid transparent;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .content {
+            display: none;
+            animation: fadeIn 2s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* text styling */
+
+        .word {
+            margin: auto;
+            color: rgb(104, 96, 255);
+            font: 500 normal 'tahoma';
+            text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
+        }
+    </style>
+
+    <!-- The End Of Bootstrap CSS -->
+
+</head>
+
+<body style="background-color: #000000;">
+
+    <div class="loading-circle-container">
+        <div class="loading-circle"></div>
+    </div>
+
+    <!-- The Navigation Bar -->
+
+    <nav class="navbar navbar-expand-lg container justify-content-center p-4" data-bs-theme="dark"
+        style="background-color: #000000;">
+        <div class="d-flex">
+            <div class="spinner-border" role="status"
+                style="width: 40px; border: 4px solid rgb(104, 96, 255); margin-top: 3px; background-color: #000000;">
+                <span class="visually-hidden"></span>
+            </div>
+
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"> S ᑕ ᗩ ᒪ ᑕ O ᖇ Σ ™ </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- The End Of Navigation Bar -->
+
+    <!-- The Start Of Main Page -->
+
+    <div class="container-fluid px-4 py-5 my-5 text-center">
+        <div class="lc-block mb-4">
+            <div editable="rich">
+                <h2 class="display-3 fw-bold" style="color: aliceblue;">Push the limits of your<br><span
+                        class="text-primary"></span></h2>
+                <div class="word display-2 fw-bold"></div>
+            </div>
+        </div>
+        <div class="lc-block col-lg-6 mx-auto mb-5">
+            <div editable="rich">
+
+                <p class="lead" style="color: aliceblue; font-weight: 500;font-size: 15px;">Scalcore Does Things Right
+                    Before Your Eyes
+                </p>
+            </div>
+        </div>
+
+        <a type="button" class="btn btn-outline-light btn-zoom-out btn-lg" data-mdb-ripple-color="dark" role="button"
+            href="projects.html"
+            style="font-family: 'IBM Plex Sans', sans-serif; font-weight: 200; border-radius:50px;">Get Started</a>
+
+        <div class="lc-block d-grid gap-2 d-sm-flex justify-content-sm-center p-4">
+            <img class="img-fluid" src="bloom.png" width="" height="783" srcset="" sizes="" alt="bloomice">
+        </div>
+    </div>
+
+    <!-- The End Of Main Page -->
+
+    <!-- The Footer Area -->
+
+    <!-- Footer -->
+
+    <footer class="text-center text-lg-start text-muted">
+
+        <!-- Copyright area -->
+
+        <div class="text-center p-4" style="color: rgb(205, 243, 253);">
+            © 2023 Copyright:
+            <a class="text-reset" href="https://sumittonikko.webflow.io/"
+                style="text-decoration: none; color: whitesmoke">Sumit Hibare</a>
+        </div>
+
+        <!-- Copyright -->
+
+    </footer>
+
+    <!-- Footer -->
+
+    <!-- the javascripts -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"></script>
+
+    <script>
+        // Show the content and hide the loading circle after 10 seconds
+        window.addEventListener('load', () => {
+            const loadingCircleContainer = document.querySelector('.loading-circle-container');
+            const content = document.querySelector('.content');
+
+            setTimeout(() => {
+                loadingCircleContainer.style.display = 'none';
+                content.style.display = 'block';
+            }, 1000);
+        });
+    </script>
+
+    <script>
+        const words = ['CREATIVITY', 'IMAGINATION', 'BOUNDARIES'];
+        let currentWordIndex = 0;
+        let currentLetterIndex = 0;
+        let forward = true;
+        const delay = 90; // Delay in milliseconds between letter changes
+
+        function animateWordFlicker() {
+            const wordElement = document.querySelector('.word');
+            const currentWord = words[currentWordIndex];
+            let displayText = currentWord.substr(0, currentLetterIndex);
+
+            if (forward) {
+                currentLetterIndex++;
+                if (currentLetterIndex > currentWord.length) {
+                    forward = false;
+                    currentLetterIndex = currentWord.length - 1;
+                }
+            } else {
+                currentLetterIndex--;
+                if (currentLetterIndex < 0) {
+                    forward = true;
+                    currentWordIndex = (currentWordIndex + 1) % words.length;
+                    currentLetterIndex = 0;
+                }
+            }
+
+            wordElement.textContent = displayText;
+        }
+
+        setInterval(animateWordFlicker, delay);
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
+<script>
+    alert("ꜱᴄᴀʟᴄᴏʀᴇ ɪꜱ ᴛʜᴇ ᴘʀᴏᴊᴇᴄᴛ ɪɴɪᴛɪᴀᴛᴇᴅ ʙʏ ᴛᴇᴀᴍ ʙʜᴀɢᴀᴛ ꜱɪɴɢʜ, ᴄᴜʀʀᴇɴᴛʟʏ ᴛʜɪꜱ ᴘʀᴏᴊᴇᴄᴛ ɪꜱ ᴀᴛ ᴛʜᴇ ɪɴɪᴛɪᴀʟ ꜱᴛᴀɢᴇ ᴏꜰ ᴅᴇᴠᴇʟᴏᴘᴇᴍᴇɴᴛ. ɪꜰ ʏᴏᴜ ɴᴏᴛɪᴄᴇ ꜱᴏᴍᴇ ᴄʜᴀɴɢᴇꜱ ᴛʜᴇɴ ᴅᴏ ɴᴏᴛ ᴡᴏʀʀʏ !");
+</script>
+</body>
+
+</html>
